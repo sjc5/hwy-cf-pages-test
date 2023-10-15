@@ -23,6 +23,8 @@ app.use("*", logger())
 app.get("*", secureHeaders())
 
 app.all("*", async (c, next) => {
+  c.header("Cache-Control", "public, max-age=10")
+
   return await renderRoot(c, next, async ({ activePathData }) => {
     return (
       <html lang="en">

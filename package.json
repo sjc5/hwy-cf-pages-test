@@ -13,12 +13,12 @@
   "dependencies": {
     "@hono/node-server": "^1.2.0",
     "hono": "^3.7.5",
-    "hwy": "0.4.0-beta.13"
+    "hwy": "0.4.0-beta.14"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20231002.0",
-    "@hwy-js/build": "0.4.0-beta.13",
-    "@hwy-js/dev": "0.4.0-beta.13",
+    "@hwy-js/build": "0.4.0-beta.14",
+    "@hwy-js/dev": "0.4.0-beta.14",
     "@types/node": "^20.8.4",
     "esbuild": "^0.19.4",
     "htmx.org": "^1.9.6",

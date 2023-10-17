@@ -14,17 +14,12 @@ import { secureHeaders } from "hono/secure-headers"
 
 const app = new Hono()
 
-await hwyInit({
-  app,
-  importMetaUrl: import.meta.url,
-})
+await hwyInit({ app })
 
 app.use("*", logger())
 app.get("*", secureHeaders())
 
 app.all("*", async (c, next) => {
-  c.header("Cache-Control", "public, max-age=10")
-
   return await renderRoot(c, next, async ({ activePathData }) => {
     return (
       <html lang="en">

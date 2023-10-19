@@ -1,4 +1,4 @@
-import type { Config } from "tailwindcss"
+import type { Config } from "tailwindcss";
 
 export default {
   darkMode: "media",
@@ -10,4 +10,4 @@ export default {
   future: {
     hoverOnlyWhenSupported: true,
   },
-} satisfies Config
+} satisfies Config;

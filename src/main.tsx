@@ -7,17 +7,17 @@ import {
   HeadElements,
   getDefaultBodyProps,
   renderRoot,
-} from "hwy"
-import { Hono } from "hono"
-import { logger } from "hono/logger"
-import { secureHeaders } from "hono/secure-headers"
+} from "hwy";
+import { Hono } from "hono";
+import { logger } from "hono/logger";
+import { secureHeaders } from "hono/secure-headers";
 
-const app = new Hono()
+const app = new Hono();
 
-await hwyInit({ app })
+await hwyInit({ app });
 
-app.use("*", logger())
-app.get("*", secureHeaders())
+app.use("*", logger());
+app.get("*", secureHeaders());
 
 app.all("*", async (c, next) => {
   return await renderRoot(c, next, async ({ activePathData }) => {
@@ -79,21 +79,21 @@ app.all("*", async (c, next) => {
               activePathData,
               c,
               fallbackErrorBoundary: () => {
-                return <div>Something went wrong.</div>
+                return <div>Something went wrong.</div>;
               },
             })}
           </main>
         </body>
       </html>
-    )
-  })
-})
+    );
+  });
+});
 
-app.notFound((c) => c.text("404 Not Found", 404))
+app.notFound((c) => c.text("404 Not Found", 404));
 
 app.onError((error, c) => {
-  console.error(error)
-  return c.text("500 Internal Server Error", 500)
-})
+  console.error(error);
+  return c.text("500 Internal Server Error", 500);
+});
 
-export default app
+export default app;

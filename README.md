@@ -6,8 +6,9 @@ Be sure to check out the docs at [https://hwy.dev](https://hwy.dev).
 
 ## IMPORTANT WRANGLER-SPECIFIC NOTES:
 
-Unfortunately, you'll need to manually keep the `--port` flag in the `dev:wrangler` script
-in sync with the `dev.port` field in your `hwy.config.ts` file.
+Because Wrangler is in charge of your dev server, you should set your dev server port
+via the `--port` flag in the `dev:wrangler` script in your `package.json` file
+instead of in the `dev.port` field in your `hwy.config.ts` file.
 
 When you deploy, you'll want to set your build configuration as follows:
 

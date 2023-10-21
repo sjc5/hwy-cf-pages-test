@@ -12,19 +12,19 @@ dependencies:
     specifier: ^3.7.5
     version: 3.7.5
   hwy:
-    specifier: ^0.4.0-beta.29
-    version: 0.4.0-beta.29
+    specifier: ^0.4.0-beta.38
+    version: 0.4.0-beta.38
 
 devDependencies:
   '@cloudflare/workers-types':
     specifier: ^4.20231002.0
     version: 4.20231002.0
   '@hwy-js/build':
-    specifier: ^0.4.0-beta.29
-    version: 0.4.0-beta.29
+    specifier: ^0.4.0-beta.38
+    version: 0.4.0-beta.38
   '@hwy-js/dev':
-    specifier: ^0.4.0-beta.29
-    version: 0.4.0-beta.29
+    specifier: ^0.4.0-beta.38
+    version: 0.4.0-beta.38
   '@types/node':
     specifier: ^20.8.3
     version: 20.8.3
@@ -530,8 +530,8 @@ packages:
     engines: {node: '>=18.0.0'}
     dev: false
 
-  /@hwy-js/build@0.4.0-beta.29:
-    resolution: {integrity: sha512-D/G45Q013lbZyK5Ewny6hy9IYF0sYqkfS+3ltGXzzJAqpxqRGWDPQp/hB4YUA9V4Bx2ZBRjhdK0NTIrV3uBPAw==}
+  /@hwy-js/build@0.4.0-beta.38:
+    resolution: {integrity: sha512-CdoBLNKFyfLgVWRGR7Q/72EtBFU8bik9vT68m8grnouJ23bvPBW1rrlkKdarR3SVzwj1NiYO6g69YLUaI7TYig==}
     hasBin: true
     dependencies:
       chokidar: 3.5.3
@@ -541,8 +541,8 @@ packages:
       readdirp: 3.6.0
     dev: true
 
-  /@hwy-js/dev@0.4.0-beta.29:
-    resolution: {integrity: sha512-jd8VYZCz1BXlsmLOTunxvX9tQik7ZyjUkdUh7PBdF156uXqdSgkc3QpivkSilXdmSivkJiwIDkFFgHxz5HaVvg==}
+  /@hwy-js/dev@0.4.0-beta.38:
+    resolution: {integrity: sha512-jRF/9coDzdpPePQJVS/nH+tRCbI2nWLRRybWrshNcGK0xlDyo5aXIAOZZowVtQnCqEYYHgS8HbSjgC2W72W00w==}
     dependencies:
       picocolors: 1.0.0
     dev: true
@@ -1159,8 +1159,8 @@ packages:
     resolution: {integrity: sha512-4Zebo9nzg8u2ZHuIJmvB/nQS6kIMLIoEfhTg/oRwyCIJhL5MLA/jPU1EPEBtGOmG4ZG0k05Vpd3sab2+zfvteQ==}
     dev: true
 
-  /hwy@0.4.0-beta.29:
-    resolution: {integrity: sha512-FG0y+MYVQyPTfSDfnOTGZEwNLIfwrh4W3opPOxSdmfMhXgxAGJYPP5bF+QTzY5BE4Smj1UFE5k8srgELHlM8Og==}
+  /hwy@0.4.0-beta.38:
+    resolution: {integrity: sha512-tZgmjy1J7IM535vCRqXafeMWnR4l72+4ufNqFEa6i46YW6PQJfxzvEkd2yI9+0Ezn0ThirWeCWReYvDn2nTODA==}
     dev: false
 
   /inflight@1.0.6:

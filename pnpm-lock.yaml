@@ -9,28 +9,28 @@ dependencies:
     specifier: ^1.2.0
     version: 1.2.0
   hono:
-    specifier: ^3.9.0
-    version: 3.9.0
+    specifier: ^3.9.1
+    version: 3.9.1
   hwy:
-    specifier: 0.6.0-beta.2
-    version: 0.6.0-beta.2
+    specifier: 0.6.0
+    version: 0.6.0
 
 devDependencies:
   '@cloudflare/workers-types':
     specifier: ^4.20231025.0
     version: 4.20231025.0
   '@hwy-js/build':
-    specifier: 0.6.0-beta.2
-    version: 0.6.0-beta.2
+    specifier: 0.6.0
+    version: 0.6.0
   '@hwy-js/client':
-    specifier: 0.6.0-beta.2
-    version: 0.6.0-beta.2(htmx.org@1.9.6)(idiomorph@0.0.9)
+    specifier: 0.6.0
+    version: 0.6.0(htmx.org@1.9.6)(idiomorph@0.0.9)
   '@hwy-js/dev':
-    specifier: 0.6.0-beta.2
-    version: 0.6.0-beta.2
+    specifier: 0.6.0
+    version: 0.6.0
   '@types/node':
-    specifier: ^20.8.9
-    version: 20.8.9
+    specifier: ^20.8.10
+    version: 20.8.10
   htmx.org:
     specifier: ^1.9.6
     version: 1.9.6
@@ -536,8 +536,8 @@ packages:
     engines: {node: '>=18.0.0'}
     dev: false
 
-  /@hwy-js/build@0.6.0-beta.2:
-    resolution: {integrity: sha512-Ty6BLAjQEFZQE6190+oXmaypJiAqYvszVFPee4+SQvJxw+wHe2wqhmDmnodbhnhSNFkOwwjjbyz3lui5TzVXoA==}
+  /@hwy-js/build@0.6.0:
+    resolution: {integrity: sha512-U4JVsuzqDSSRCUISf/or7L0trjyFCsL4FJM5BZgLrFezqqTF0+xd0BQB6eSIBOJqWXYdyIql/rxOW7pxq/A7WQ==}
     hasBin: true
     dependencies:
       chokidar: 3.5.3
@@ -547,8 +547,8 @@ packages:
       readdirp: 3.6.0
     dev: true
 
-  /@hwy-js/client@0.6.0-beta.2(htmx.org@1.9.6)(idiomorph@0.0.9):
-    resolution: {integrity: sha512-D9TImBq+syJmK/zMeF9jXredybfE/2Z1RCSbhKETAN1U0QCvQaVRTBvZY8Icc5crTDPiUcPpxU0XMNjthqdzjA==}
+  /@hwy-js/client@0.6.0(htmx.org@1.9.6)(idiomorph@0.0.9):
+    resolution: {integrity: sha512-hOymqS6o3o8ONKd2kUjOuThJF7DQTvu4zxkSQlFFhrFCZiqAhFsfwhM37fgbYB1jzjie3VFVTq8qgBkaZd+ZUg==}
     peerDependencies:
       htmx.org: '>=1.9.6'
       idiomorph: '>=0.0.9'
@@ -565,8 +565,8 @@ packages:
       idiomorph: 0.0.9
     dev: true
 
-  /@hwy-js/dev@0.6.0-beta.2:
-    resolution: {integrity: sha512-wAyxGQzZoX6xKYjyTHX7ikhxoTWUs+rZ/WcL0MEnevp5uqIfBu1JND/5dnw28AKJLjEUALQRl0U/5nZnbxQgUg==}
+  /@hwy-js/dev@0.6.0:
+    resolution: {integrity: sha512-nJPIw6MXG5zs/r2SpERh8SQGCMB2bC7u5vZ6Yo9v+uv0XM73VXgxvFCWgGcQmSAdAOtnE4MGaTE53Vf+CheFZA==}
     dependencies:
       picocolors: 1.0.0
     dev: true
@@ -625,11 +625,11 @@ packages:
   /@types/node-forge@1.3.8:
     resolution: {integrity: sha512-vGXshY9vim9CJjrpcS5raqSjEfKlJcWy2HNdgUasR66fAnVEYarrf1ULV4nfvpC1nZq/moA9qyqBcu83x+Jlrg==}
     dependencies:
-      '@types/node': 20.8.9
+      '@types/node': 20.8.10
     dev: true
 
-  /@types/node@20.8.9:
-    resolution: {integrity: sha512-UzykFsT3FhHb1h7yD4CA4YhBHq545JC0YnEz41xkipN88eKQtL6rSgocL5tbAP6Ola9Izm/Aw4Ora8He4x0BHg==}
+  /@types/node@20.8.10:
+    resolution: {integrity: sha512-TlgT8JntpcbmKUFzjhsyhGfP2fsiz1Mv56im6enJ905xG1DAYesxJaeSbGqQmAw8OWPdhyJGhGSQGKRNJ45u9w==}
     dependencies:
       undici-types: 5.26.5
     dev: true
@@ -1181,8 +1181,8 @@ packages:
       function-bind: 1.1.2
     dev: true
 
-  /hono@3.9.0:
-    resolution: {integrity: sha512-MSGmerYD69jwDkBa631lY7y3xtEwbKFg2huFZ0TruzCdfJlmPd/rFzyvmMheePKsiA7CZp/KqL3mflBOzEmjLA==}
+  /hono@3.9.1:
+    resolution: {integrity: sha512-z3nM9CjNZ8PRAH6NNntk4ESKW2POEbGanhK1QpYdQ1MOYRzZPSEE8B5mqw8bYEPa7qIQxX0vtlv7XOxtwFbosg==}
     engines: {node: '>=16.0.0'}
     dev: false
 
@@ -1194,8 +1194,8 @@ packages:
     resolution: {integrity: sha512-4Zebo9nzg8u2ZHuIJmvB/nQS6kIMLIoEfhTg/oRwyCIJhL5MLA/jPU1EPEBtGOmG4ZG0k05Vpd3sab2+zfvteQ==}
     dev: true
 
-  /hwy@0.6.0-beta.2:
-    resolution: {integrity: sha512-cSedVog06w3bsbkPBP41Piq1yU9R9pcwDEZPnUiTqgl0WtnQ5S+tW1D5DfsaTF+lTaQZl3QMN4F81iNAucPmxg==}
+  /hwy@0.6.0:
+    resolution: {integrity: sha512-h6XOfoU9jMQPdBQHAaZRuJjWwk7XGCZkFvBKNSqXNl0AjuS56MfxiQL6pLwCfo+vE8ihJ8/reJoEFJPHWgRWmg==}
     dev: false
 
   /idiomorph@0.0.9:
@@ -1351,8 +1351,8 @@ packages:
     resolution: {integrity: sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==}
     dev: true
 
-  /jiti@1.20.0:
-    resolution: {integrity: sha512-3TV69ZbrvV6U5DfQimop50jE9Dl6J8O1ja1dvBbMba/sZ3YBEQqJ2VZRoQPVnhlzjNtU1vaXRZVrVjU4qtm8yA==}
+  /jiti@1.21.0:
+    resolution: {integrity: sha512-gFqAIbuKyyso/3G2qhiO2OM6shY6EPP/R0+mkDbyspxKazh8BXDC5FiFsUjlczgdNz/vfra0da2y+aHrusLG/Q==}
     hasBin: true
     dev: true
 
@@ -1960,7 +1960,7 @@ packages:
       fast-glob: 3.3.1
       glob-parent: 6.0.2
       is-glob: 4.0.3
-      jiti: 1.20.0
+      jiti: 1.21.0
       lilconfig: 2.1.0
       micromatch: 4.0.5
       normalize-path: 3.0.0

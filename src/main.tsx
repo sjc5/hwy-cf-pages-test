@@ -58,7 +58,7 @@ app.all("*", async (c, next) => {
           <DevLiveRefreshScript />
         </head>
 
-        <body {...getDefaultBodyProps()}>
+        <body {...getDefaultBodyProps({ idiomorph: true })}>
           <nav>
             <a href="/">
               <h1>Hwy</h1>

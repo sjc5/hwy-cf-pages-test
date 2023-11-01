@@ -12,25 +12,31 @@ dependencies:
     specifier: ^3.9.0
     version: 3.9.0
   hwy:
-    specifier: ^0.5.0-beta.9
-    version: 0.5.0-beta.9
+    specifier: 0.6.0-beta.2
+    version: 0.6.0-beta.2
 
 devDependencies:
   '@cloudflare/workers-types':
     specifier: ^4.20231025.0
     version: 4.20231025.0
   '@hwy-js/build':
-    specifier: ^0.5.0-beta.9
-    version: 0.5.0-beta.9
+    specifier: 0.6.0-beta.2
+    version: 0.6.0-beta.2
+  '@hwy-js/client':
+    specifier: 0.6.0-beta.2
+    version: 0.6.0-beta.2(htmx.org@1.9.6)(idiomorph@0.0.9)
   '@hwy-js/dev':
-    specifier: ^0.5.0-beta.9
-    version: 0.5.0-beta.9
+    specifier: 0.6.0-beta.2
+    version: 0.6.0-beta.2
   '@types/node':
     specifier: ^20.8.9
     version: 20.8.9
   htmx.org:
     specifier: ^1.9.6
     version: 1.9.6
+  idiomorph:
+    specifier: ^0.0.9
+    version: 0.0.9
   npm-run-all:
     specifier: ^4.1.5
     version: 4.1.5
@@ -530,8 +536,8 @@ packages:
     engines: {node: '>=18.0.0'}
     dev: false
 
-  /@hwy-js/build@0.5.0-beta.9:
-    resolution: {integrity: sha512-/zPzVzX7P5GAeO3e5XnY8CBA7ryIhQe7AC1ptA19KwLZEpiJ15ld03AHLlku8g1XD8YeTPQPOeeWVzd0tsHj5Q==}
+  /@hwy-js/build@0.6.0-beta.2:
+    resolution: {integrity: sha512-Ty6BLAjQEFZQE6190+oXmaypJiAqYvszVFPee4+SQvJxw+wHe2wqhmDmnodbhnhSNFkOwwjjbyz3lui5TzVXoA==}
     hasBin: true
     dependencies:
       chokidar: 3.5.3
@@ -541,8 +547,26 @@ packages:
       readdirp: 3.6.0
     dev: true
 
-  /@hwy-js/dev@0.5.0-beta.9:
-    resolution: {integrity: sha512-bAixb9/bTjYPZh/2IjuftgMACa/FrWNo2nmqbwB/JpcAcgqG3hAFy1jM5t2PHfO5GvqlO6A54gjXjlLSfYOdNw==}
+  /@hwy-js/client@0.6.0-beta.2(htmx.org@1.9.6)(idiomorph@0.0.9):
+    resolution: {integrity: sha512-D9TImBq+syJmK/zMeF9jXredybfE/2Z1RCSbhKETAN1U0QCvQaVRTBvZY8Icc5crTDPiUcPpxU0XMNjthqdzjA==}
+    peerDependencies:
+      htmx.org: '>=1.9.6'
+      idiomorph: '>=0.0.9'
+      nprogress: '>=0.2.0'
+    peerDependenciesMeta:
+      htmx.org:
+        optional: true
+      idiomorph:
+        optional: true
+      nprogress:
+        optional: true
+    dependencies:
+      htmx.org: 1.9.6
+      idiomorph: 0.0.9
+    dev: true
+
+  /@hwy-js/dev@0.6.0-beta.2:
+    resolution: {integrity: sha512-wAyxGQzZoX6xKYjyTHX7ikhxoTWUs+rZ/WcL0MEnevp5uqIfBu1JND/5dnw28AKJLjEUALQRl0U/5nZnbxQgUg==}
     dependencies:
       picocolors: 1.0.0
     dev: true
@@ -1170,9 +1194,13 @@ packages:
     resolution: {integrity: sha512-4Zebo9nzg8u2ZHuIJmvB/nQS6kIMLIoEfhTg/oRwyCIJhL5MLA/jPU1EPEBtGOmG4ZG0k05Vpd3sab2+zfvteQ==}
     dev: true
 
-  /hwy@0.5.0-beta.9:
-    resolution: {integrity: sha512-9jI3OyXqNGl/MSdZoGbuXgLLDNPdl/rDzCHlxeXQXF4V18ZfZtZN1A0XMG3lTsKpSVwk0FCNS1r5J32F+aqHSg==}
+  /hwy@0.6.0-beta.2:
+    resolution: {integrity: sha512-cSedVog06w3bsbkPBP41Piq1yU9R9pcwDEZPnUiTqgl0WtnQ5S+tW1D5DfsaTF+lTaQZl3QMN4F81iNAucPmxg==}
     dev: false
+
+  /idiomorph@0.0.9:
+    resolution: {integrity: sha512-X7SGsldE5jQD+peLjNLAnIJDEZtGpuLrNRUBrTWMMnzrx9gwy5U+SCRhaifO2v2Z+8j09IY2J+EYaxHsOLTD0A==}
+    dev: true
 
   /inflight@1.0.6:
     resolution: {integrity: sha512-k92I/b08q4wvFscXCLvqfsHCrjrF7yiXsQuIVvVE7N82W3+aqpzuUdBbfhWcy/FZR3/4IgflMgKLOsvPDrGCJA==}

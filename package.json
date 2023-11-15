@@ -6,21 +6,21 @@
     "hwy-prebuild": "tailwindcss -i src/styles/tw-input.css -o src/styles/tw-output.bundle.css",
     "build": "tsc --noEmit && hwy-build",
     "dev:serve": "hwy-dev-serve",
-    "dev:wrangler": "wrangler pages dev ./dist --compatibility-flag=\"nodejs_compat\" --port=5555 --live-reload",
+    "dev:wrangler": "wrangler pages dev ./dist --compatibility-flag=\"nodejs_compat\" --port=9023 --live-reload",
     "dev": "npm run build && npm-run-all --parallel dev:*"
   },
   "dependencies": {
-    "@hono/node-server": "^1.2.0",
-    "hono": "^3.9.1",
-    "hwy": "0.6.0"
+    "hono": "^3.10.1",
+    "hwy": "0.7.0-beta.23"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20231025.0",
-    "@hwy-js/build": "0.6.0",
-    "@hwy-js/client": "0.6.0",
-    "@hwy-js/dev": "0.6.0",
-    "@types/node": "^20.8.10",
-    "htmx.org": "^1.9.6",
+    "@hwy-js/build": "0.7.0-beta.23",
+    "@hwy-js/client": "0.7.0-beta.23",
+    "@hwy-js/dev": "0.7.0-beta.23",
+    "@hwy-js/utils": "0.7.0-beta.23",
+    "@types/node": "^20.9.0",
+    "htmx.org": "^1.9.8",
     "idiomorph": "^0.0.9",
     "npm-run-all": "^4.1.5",
     "tailwindcss": "^3.3.5",

@@ -1,8 +1,12 @@
-import type { DataFunctionArgs, PageProps } from "hwy";
-import { extractSimpleFormData } from "../../utils/extract-simple-form-data.js";
+import type { DataProps, PageProps } from "hwy";
+import { getFormStrings } from "@hwy-js/utils";
 
-export async function action({ c }: DataFunctionArgs) {
-  const data = await extractSimpleFormData<"email" | "password">({ c });
+export async function action({ c }: DataProps) {
+  const data = await getFormStrings<"email" | "password">({ c });
+
+  if (!data) {
+    throw new Error("Error: No data was received.");
+  }
 
   if (!data.email || !data.password) {
     return {
@@ -63,7 +67,12 @@ export default function ({ actionData }: PageProps<never, typeof action>) {
       </p>
 
       {!actionData?.success && (
-        <form action={thisRoute} method="POST" style={colStyles}>
+        <form
+          action={thisRoute}
+          method="POST"
+          style={colStyles}
+          hx-swap="scroll:none"
+        >
           <label style={labelStyles}>
             Email
             <input

@@ -5,35 +5,35 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
-  '@hono/node-server':
-    specifier: ^1.2.0
-    version: 1.2.0
   hono:
-    specifier: ^3.9.1
-    version: 3.9.1
+    specifier: ^3.10.1
+    version: 3.10.1
   hwy:
-    specifier: 0.6.0
-    version: 0.6.0
+    specifier: 0.7.0-beta.23
+    version: 0.7.0-beta.23(hono@3.10.1)
 
 devDependencies:
   '@cloudflare/workers-types':
     specifier: ^4.20231025.0
     version: 4.20231025.0
   '@hwy-js/build':
-    specifier: 0.6.0
-    version: 0.6.0
+    specifier: 0.7.0-beta.23
+    version: 0.7.0-beta.23
   '@hwy-js/client':
-    specifier: 0.6.0
-    version: 0.6.0(htmx.org@1.9.6)(idiomorph@0.0.9)
+    specifier: 0.7.0-beta.23
+    version: 0.7.0-beta.23(htmx.org@1.9.8)(idiomorph@0.0.9)
   '@hwy-js/dev':
-    specifier: 0.6.0
-    version: 0.6.0
+    specifier: 0.7.0-beta.23
+    version: 0.7.0-beta.23
+  '@hwy-js/utils':
+    specifier: 0.7.0-beta.23
+    version: 0.7.0-beta.23
   '@types/node':
-    specifier: ^20.8.10
-    version: 20.8.10
+    specifier: ^20.9.0
+    version: 20.9.0
   htmx.org:
-    specifier: ^1.9.6
-    version: 1.9.6
+    specifier: ^1.9.8
+    version: 1.9.8
   idiomorph:
     specifier: ^0.0.9
     version: 0.0.9
@@ -526,18 +526,13 @@ packages:
     dev: true
     optional: true
 
-  /@fastify/busboy@2.0.0:
-    resolution: {integrity: sha512-JUFJad5lv7jxj926GPgymrWQxxjPYuJNiNjNMzqT+HiuP6Vl3dk5xzG+8sTX96np0ZAluvaMzPsjhHZ5rNuNQQ==}
+  /@fastify/busboy@2.1.0:
+    resolution: {integrity: sha512-+KpH+QxZU7O4675t3mnkQKcZZg56u+K/Ct2K+N2AZYNVK8kyeo/bI18tI8aPm3tvNNRyTWfj6s5tnGNlcbQRsA==}
     engines: {node: '>=14'}
     dev: true
 
-  /@hono/node-server@1.2.0:
-    resolution: {integrity: sha512-aHT8lDMLpd7ioXJ1/057+h+oE/k7rCOWmjklYDsE0jE4CoNB9XzG4f8dRHvw4s5HJFocaYDiGgYM/V0kYbQ0ww==}
-    engines: {node: '>=18.0.0'}
-    dev: false
-
-  /@hwy-js/build@0.6.0:
-    resolution: {integrity: sha512-U4JVsuzqDSSRCUISf/or7L0trjyFCsL4FJM5BZgLrFezqqTF0+xd0BQB6eSIBOJqWXYdyIql/rxOW7pxq/A7WQ==}
+  /@hwy-js/build@0.7.0-beta.23:
+    resolution: {integrity: sha512-/DsF+R/jvSVW4EIQyn4xGHf05dubDc/otmHgMKClMnILM/jhnLpyotsr1VJA5P8T0ujCGrtBplhKnW2pE9IBqQ==}
     hasBin: true
     dependencies:
       chokidar: 3.5.3
@@ -547,8 +542,8 @@ packages:
       readdirp: 3.6.0
     dev: true
 
-  /@hwy-js/client@0.6.0(htmx.org@1.9.6)(idiomorph@0.0.9):
-    resolution: {integrity: sha512-hOymqS6o3o8ONKd2kUjOuThJF7DQTvu4zxkSQlFFhrFCZiqAhFsfwhM37fgbYB1jzjie3VFVTq8qgBkaZd+ZUg==}
+  /@hwy-js/client@0.7.0-beta.23(htmx.org@1.9.8)(idiomorph@0.0.9):
+    resolution: {integrity: sha512-6acxweSFKqIwnCuuKeYpMI/LN9ZB/p8g05Zxz3vwSLUM8WGS8LLipvjvzw5oGNgtku9GERBCOJX+M3RxpdRECg==}
     peerDependencies:
       htmx.org: '>=1.9.6'
       idiomorph: '>=0.0.9'
@@ -561,14 +556,18 @@ packages:
       nprogress:
         optional: true
     dependencies:
-      htmx.org: 1.9.6
+      htmx.org: 1.9.8
       idiomorph: 0.0.9
     dev: true
 
-  /@hwy-js/dev@0.6.0:
-    resolution: {integrity: sha512-nJPIw6MXG5zs/r2SpERh8SQGCMB2bC7u5vZ6Yo9v+uv0XM73VXgxvFCWgGcQmSAdAOtnE4MGaTE53Vf+CheFZA==}
+  /@hwy-js/dev@0.7.0-beta.23:
+    resolution: {integrity: sha512-kRmUIFOWGqBoPzYGqnopNF15PwExiSzs2baCI8wkSzMKvpIKnOKpW/34Q6W72MmQm8BHLh2nC0ppdqZviTFPXw==}
     dependencies:
       picocolors: 1.0.0
+    dev: true
+
+  /@hwy-js/utils@0.7.0-beta.23:
+    resolution: {integrity: sha512-J8C7jXyUG5KSUuyjhKtOXxSChw9E3sGJ8zttLTFVTDT5rxT1e1eyxjuBxYQhym/hv+E2zJ5sVGxDgzDR/pSkKw==}
     dev: true
 
   /@jridgewell/gen-mapping@0.3.3:
@@ -622,14 +621,14 @@ packages:
       fastq: 1.15.0
     dev: true
 
-  /@types/node-forge@1.3.8:
-    resolution: {integrity: sha512-vGXshY9vim9CJjrpcS5raqSjEfKlJcWy2HNdgUasR66fAnVEYarrf1ULV4nfvpC1nZq/moA9qyqBcu83x+Jlrg==}
+  /@types/node-forge@1.3.9:
+    resolution: {integrity: sha512-meK88cx/sTalPSLSoCzkiUB4VPIFHmxtXm5FaaqRDqBX2i/Sy8bJ4odsan0b20RBjPh06dAQ+OTTdnyQyhJZyQ==}
     dependencies:
-      '@types/node': 20.8.10
+      '@types/node': 20.9.0
     dev: true
 
-  /@types/node@20.8.10:
-    resolution: {integrity: sha512-TlgT8JntpcbmKUFzjhsyhGfP2fsiz1Mv56im6enJ905xG1DAYesxJaeSbGqQmAw8OWPdhyJGhGSQGKRNJ45u9w==}
+  /@types/node@20.9.0:
+    resolution: {integrity: sha512-nekiGu2NDb1BcVofVcEKMIwzlx4NjHlcjhoxxKBNLtz15Y1z7MYf549DFvkHSId02Ax6kGwWntIBPC3l/JZcmw==}
     dependencies:
       undici-types: 5.26.5
     dev: true
@@ -1012,8 +1011,8 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
-  /fast-glob@3.3.1:
-    resolution: {integrity: sha512-kNFPyjhh5cKjrUltxs+wFx+ZkbRaxxmZ+X0ZU31SOsxCEtP9VPgtq2teZw1DebupL5GmDaNQ6yKMMVcM41iqDg==}
+  /fast-glob@3.3.2:
+    resolution: {integrity: sha512-oX2ruAFQwf/Orj8m737Y5adxDQO0LAB7/S5MnxCdTNDd4p6BsyIVsv9JQsATbTSq8KHRpLwIHbVlUNatxd+1Ow==}
     engines: {node: '>=8.6.0'}
     dependencies:
       '@nodelib/fs.stat': 2.0.5
@@ -1181,8 +1180,8 @@ packages:
       function-bind: 1.1.2
     dev: true
 
-  /hono@3.9.1:
-    resolution: {integrity: sha512-z3nM9CjNZ8PRAH6NNntk4ESKW2POEbGanhK1QpYdQ1MOYRzZPSEE8B5mqw8bYEPa7qIQxX0vtlv7XOxtwFbosg==}
+  /hono@3.10.1:
+    resolution: {integrity: sha512-4jPKCmYWLAoCMpmvOU+xNOQYdcNftip7sM/IsO8EPyGAtjk9fGNyUchG6huSzLrY449WDNGFPetVs5doepNnlA==}
     engines: {node: '>=16.0.0'}
     dev: false
 
@@ -1190,12 +1189,16 @@ packages:
     resolution: {integrity: sha512-mxIDAb9Lsm6DoOJ7xH+5+X4y1LU/4Hi50L9C5sIswK3JzULS4bwk1FvjdBgvYR4bzT4tuUQiC15FE2f5HbLvYw==}
     dev: true
 
-  /htmx.org@1.9.6:
-    resolution: {integrity: sha512-4Zebo9nzg8u2ZHuIJmvB/nQS6kIMLIoEfhTg/oRwyCIJhL5MLA/jPU1EPEBtGOmG4ZG0k05Vpd3sab2+zfvteQ==}
+  /htmx.org@1.9.8:
+    resolution: {integrity: sha512-eH825QM6yJ1AeHTJgUxy3xnXnP/uXD56x52/VYnQ9CMw+o9H04ar/GY5PHuiZeelsqLK4wkviVdCel7u+3h4Fw==}
     dev: true
 
-  /hwy@0.6.0:
-    resolution: {integrity: sha512-h6XOfoU9jMQPdBQHAaZRuJjWwk7XGCZkFvBKNSqXNl0AjuS56MfxiQL6pLwCfo+vE8ihJ8/reJoEFJPHWgRWmg==}
+  /hwy@0.7.0-beta.23(hono@3.10.1):
+    resolution: {integrity: sha512-7pphJJgvTHbNn99ME9moFBs6/tLZIu1cEP2oHM5Kiw3XlaJMZeAs4McahZfKvToRm3qVJEJBQcaN0mzP31PC0A==}
+    peerDependencies:
+      hono: ^3.10.0
+    dependencies:
+      hono: 3.10.1
     dev: false
 
   /idiomorph@0.0.9:
@@ -1420,10 +1423,10 @@ packages:
       glob-to-regexp: 0.4.1
       source-map-support: 0.5.21
       stoppable: 1.1.0
-      undici: 5.27.0
+      undici: 5.27.2
       workerd: 1.20231025.0
       ws: 8.14.2
-      youch: 3.3.2
+      youch: 3.3.3
       zod: 3.22.4
     transitivePeerDependencies:
       - bufferutil
@@ -1454,8 +1457,8 @@ packages:
       thenify-all: 1.6.0
     dev: true
 
-  /nanoid@3.3.6:
-    resolution: {integrity: sha512-BGcqMMJuToF7i1rt+2PWSNVnWIkGCU78jBG3RxO/bZlnZPK2Cmi2QaffxGO/2RvWi9sL+FAiRiXMgsyxQ1DIDA==}
+  /nanoid@3.3.7:
+    resolution: {integrity: sha512-eSRppjcPIatRIMC1U6UngP8XFcz8MQWGQdt1MTBQ7NaAmvXDfvNxbvWV3x2y6CdEUciCSsDHDQZbhYaB8QEo2g==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
     dev: true
@@ -1633,7 +1636,7 @@ packages:
     dependencies:
       lilconfig: 2.1.0
       postcss: 8.4.31
-      yaml: 2.3.3
+      yaml: 2.3.4
     dev: true
 
   /postcss-nested@6.0.1(postcss@8.4.31):
@@ -1662,7 +1665,7 @@ packages:
     resolution: {integrity: sha512-PS08Iboia9mts/2ygV3eLpY5ghnUcfLV/EXTOW1E2qYxJKGGBUtNjN76FYHnMs36RmARn41bC0AZmn+rR0OVpQ==}
     engines: {node: ^10 || ^12 || >=14}
     dependencies:
-      nanoid: 3.3.6
+      nanoid: 3.3.7
       picocolors: 1.0.0
       source-map-js: 1.0.2
     dev: true
@@ -1774,7 +1777,7 @@ packages:
     resolution: {integrity: sha512-th5B4L2U+eGLq1TVh7zNRGBapioSORUeymIydxgFpwww9d2qyKvtuPU2jJuHvYAwwqi2Y596QBL3eEqcPEYL8Q==}
     engines: {node: '>=10'}
     dependencies:
-      '@types/node-forge': 1.3.8
+      '@types/node-forge': 1.3.9
       node-forge: 1.3.1
     dev: true
 
@@ -1957,7 +1960,7 @@ packages:
       chokidar: 3.5.3
       didyoumean: 1.2.2
       dlv: 1.1.3
-      fast-glob: 3.3.1
+      fast-glob: 3.3.2
       glob-parent: 6.0.2
       is-glob: 4.0.3
       jiti: 1.21.0
@@ -2063,11 +2066,11 @@ packages:
     resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==}
     dev: true
 
-  /undici@5.27.0:
-    resolution: {integrity: sha512-l3ydWhlhOJzMVOYkymLykcRRXqbUaQriERtR70B9LzNkZ4bX52Fc8wbTDneMiwo8T+AemZXvXaTx+9o5ROxrXg==}
+  /undici@5.27.2:
+    resolution: {integrity: sha512-iS857PdOEy/y3wlM3yRp+6SNQQ6xU0mmZcwRSriqk+et/cwWAtwmIGf6WkoDN2EK/AMdCO/dfXzIwi+rFMrjjQ==}
     engines: {node: '>=14.0'}
     dependencies:
-      '@fastify/busboy': 2.0.0
+      '@fastify/busboy': 2.1.0
     dev: true
 
   /util-deprecate@1.0.2:
@@ -2134,7 +2137,7 @@ packages:
       chokidar: 3.5.3
       esbuild: 0.17.19
       miniflare: 3.20231025.0
-      nanoid: 3.3.6
+      nanoid: 3.3.7
       path-to-regexp: 6.2.1
       resolve.exports: 2.0.2
       selfsigned: 2.4.1
@@ -2170,13 +2173,13 @@ packages:
     resolution: {integrity: sha512-ibF0Or+FivM9lNrg+HGJfVX8WJqgo+kCLDc4vx6xMeTce7Aj+DLttKbxxRR/gNLSAelRc1omAPlJ77N/Jem07A==}
     dev: true
 
-  /yaml@2.3.3:
-    resolution: {integrity: sha512-zw0VAJxgeZ6+++/su5AFoqBbZbrEakwu+X0M5HmcwUiBL7AzcuPKjj5we4xfQLp78LkEMpD0cOnUhmgOVy3KdQ==}
+  /yaml@2.3.4:
+    resolution: {integrity: sha512-8aAvwVUSHpfEqTQ4w/KMlf3HcRdt50E5ODIQJBw1fQ5RL34xabzxtUlzTXVqc4rkZsPbvrXKWnABCD7kWSmocA==}
     engines: {node: '>= 14'}
     dev: true
 
-  /youch@3.3.2:
-    resolution: {integrity: sha512-9cwz/z7abtcHOIuH45nzmUFCZbyJA1nLqlirKvyNRx4wDMhqsBaifAJzBej7L4fsVPjFxYq3NK3GAcfvZsydFw==}
+  /youch@3.3.3:
+    resolution: {integrity: sha512-qSFXUk3UZBLfggAW3dJKg0BMblG5biqSF8M34E06o5CSsZtH92u9Hqmj2RzGiHDi64fhe83+4tENFP2DB6t6ZA==}
     dependencies:
       cookie: 0.5.0
       mustache: 4.2.0

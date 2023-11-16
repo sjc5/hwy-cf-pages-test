@@ -1,6 +1,6 @@
-import type { PageProps } from "hwy";
+import { type PageProps, Suspense } from "hwy";
 
-export default async function ({ Outlet }: PageProps) {
+export default async function ({ Outlet, c }: PageProps) {
   return (
     <div style={{ display: "flex", flexDirection: "column", gap: "1.5rem" }}>
       <p>
@@ -13,9 +13,24 @@ export default async function ({ Outlet }: PageProps) {
         Outlet:
       </div>
 
-      <div class="outlet-wrapper">
-        <Outlet />
-      </div>
+      <Suspense c={c} fallback={<div>Loading...</div>}>
+        <WithArtificialDelay delay={500}>
+          <div class="outlet-wrapper">
+            <Outlet />
+          </div>
+        </WithArtificialDelay>
+      </Suspense>
     </div>
   );
+}
+
+async function WithArtificialDelay({
+  children,
+  delay,
+}: {
+  children: any;
+  delay?: number;
+}) {
+  await new Promise((r) => setTimeout(r, delay ?? 500));
+  return <>{children}</>;
 }

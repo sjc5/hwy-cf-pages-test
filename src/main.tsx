@@ -23,6 +23,7 @@ app.all("*", async (c, next) => {
   return await renderRoot({
     c,
     next,
+    useStreaming: true,
     root: async ({ activePathData }) => {
       return (
         <html lang="en">

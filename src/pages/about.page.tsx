@@ -13,13 +13,13 @@ export default async function ({ Outlet, c }: PageProps) {
         Outlet:
       </div>
 
-      <Suspense c={c} fallback={<div>Loading...</div>}>
-        <WithArtificialDelay delay={500}>
-          <div class="outlet-wrapper">
-            <Outlet />
-          </div>
-        </WithArtificialDelay>
-      </Suspense>
+      {/* <Suspense c={c} fallback={<div>Loading...</div>}>
+        <WithArtificialDelay delay={500}> */}
+      <div class="outlet-wrapper">
+        <Outlet />
+      </div>
+      {/* </WithArtificialDelay>
+      </Suspense> */}
     </div>
   );
 }
